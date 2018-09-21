@@ -13,12 +13,12 @@
 
 using namespace std;
 
-view_talkone::view_talkone(int cli_fd)
+view_transfile::view_transfile(int cli_fd)
 {
 	cli_fds = cli_fd;
 }
 
-void view_talkone::processs(Json::Value val,int cli_fd,string key)
+void view_transfile::process(Json::Value val,int cli_fd,string key)
 {
 	cout<<"talk_one"<<endl;
 	//初始化redis
